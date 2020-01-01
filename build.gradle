@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'dev.simplesolution'
+version '1.0.0'
+mainClassName = "dev.simplesolution.AddBookmarkPdfDocument"
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.18'
+}
